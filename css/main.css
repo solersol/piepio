@@ -1,0 +1,531 @@
+@media screen and (max-width: 700px) {
+    .camp-container { 
+        width: 180%!important;
+        bottom: 14%!important;
+    }
+    .mobile-stack {
+        display:block;
+    }
+    .peepo-animated {
+        bottom:2%!important;
+    }
+}
+
+html, document, body {
+    overflow-x: hidden;
+}
+
+.absolute {
+ position:absolute;
+ top:0px;
+ bottom:0px;
+ left:0px;
+ right:0px;
+ height:100%;
+ width:100%;
+ display:block;
+ background-repeat:no-repeat;
+ background-size:cover;
+ background-position: bottom center;
+} 
+
+.divider {
+    position:relative;
+    padding-bottom:170px!important;
+}
+.divider::after {
+   height:120px;
+   background-repeat: repeat-x!important;
+   content:"";
+   width:100%;
+   background-size:100%;
+   position:absolute;
+   bottom:-1px;
+   left:0px;
+   right:0px;
+   width:100%;
+   background-position-y: bottom !important;
+}
+.divider-dark-blue::after {
+    background:url(../images/dark-blue-divider.svg);
+}
+.divider-brown::after {
+    background:url(../images/brown-divider.svg);
+}
+.divider-light-blue::after {
+    background:url(../images/light-blue-divider.svg);
+}
+.divider-green::after {
+    background:url(../images/green-divider.svg);
+}
+.hero-section {
+    position:relative;
+    height: 100vh;
+}
+.main-scene {
+    background-image: url('../images/main_trees.webp');
+  
+}
+.foreground-main-scene {
+    background-image: url('../images/foreground.webp');
+    height:60%!important;
+    filter: blur(1px);
+    z-index: 1;
+    top:auto!Important;
+    bottom: -6%;
+    background-position: top center;
+    transform:translateY(50px);
+}
+.camp-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h1 {
+    font-family: Sniglet;
+    font-size: 36px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    color: white;
+
+}
+
+h2 {
+    font-family: Sniglet;
+    font-size: 30px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    color: white;
+
+}
+
+h3 {
+    font-family: Sniglet;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 15.4px;
+    color: white;
+}
+
+p {
+    font-family: Sniglet;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: white;
+
+}
+
+blockquote {
+    font-family: Sniglet;
+    font-size: 21px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+pre {
+    font-family: Sniglet;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 18.5714px;
+}
+
+body {
+    margin: 0;
+    background-color: #12112f;
+}
+
+/* Keyframes for the floating effect */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translatey(0);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+}
+
+.social-link svg {
+    fill: white;
+    /* Set SVG fill color to white */
+    width: 60px;
+    /* Set width to 50px */
+    height: 60px;
+    /* Set height to 50px */
+}
+
+.social-link {
+    margin: 25px;
+    text-decoration: none;
+}
+.button-primary {
+    padding:14px 20px;
+    background:white;
+    color:#12112f;
+    border-radius:50px;
+    display:inline-block;
+    margin:auto;
+    text-decoration: none;
+    font-size:22px;
+    font-weight:800; 
+    font-family: Sniglet;
+    margin-top:15px;
+    z-index:10000;
+}
+.socials {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+.distribution-split {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.split-half { 
+    min-width:400px;
+    max-width:90%;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #effbeb;
+        /* Start with black */
+    }
+
+    50% {
+        color: #cbfeaa;
+        /* Change to red */
+    }
+
+    100% {
+        color: #a1fde8;
+        /* Change back to black */
+    }
+}
+
+.hero-title {
+    flex: 1;
+    font-size: 80px;
+    line-height: 80px;
+    margin: 0;
+    text-shadow: 2px 2px 50px #00adff;
+    text-align: center;
+}
+
+/* on mobile make the min width 100% */
+@media only screen and (max-width: 600px) {
+    .split-half {
+        max-width: 100% !Important;
+    }
+
+    .fren-bag {
+        max-height: 300px !Important;
+    }
+
+    .fren-road {
+        max-height: 300px !Important;
+    }
+
+    .hero-title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+/* Color Change Animation on hero title */
+.fren-bag {
+    max-height: 580px;
+}
+
+.chart-container {
+    position: relative;
+    height: 100%;
+    width: 540px;
+    max-height: 580px;
+}
+
+@media only screen and (max-width: 600px) {
+    .chart-container canvas {
+        max-width: 100%;
+        max-height: 300px;
+        /* Adjust based on your layout needs */
+    }
+
+}
+
+.chart-font {
+    color: white;
+    font-size: 16px;
+    font-family: Sniglet;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    /* Add a shadow */
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+.section-text {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    max-width: 700px;
+    padding: 10px;
+}
+
+.about-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+* {
+    user-select: none!important;
+}
+
+.sprite {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: url('../images/leaf.svg') no-repeat;
+    background-size: cover;
+    opacity: 1;
+    animation: fall linear;
+    transition: opacity 1s ease-out;
+}
+.coin-sprite {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: url('../images/coin.svg') no-repeat;
+    background-size: cover;
+    opacity: 1;
+    animation: coinfall linear;
+    transition: opacity 500ms ease-out;
+}
+body {
+    overflow-x: hidden;
+}
+@keyframes coinfall {
+    0% {
+        transform: translateY(0) rotate(0deg); 
+    }
+    100% {
+        transform: translateY(50vh) rotate(360deg); 
+    }
+} 
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg); 
+    }
+    100% {
+        transform: translateY(50vh) rotate(360deg); 
+    }
+} 
+
+.disclaimer {
+    font-size: 12px;
+    text-align: center;
+}
+
+.faq-section {
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    background-color:#624625;
+    border-radius: 8px;
+}
+
+.faq-title {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0;
+    color: #74c790;
+}
+
+.fren-band {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.fren-road {
+    max-height: 580px;
+}
+
+.roadmap-split {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.roadmap-split {
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.peepo-animated {
+    position: absolute;
+    right: 14%;
+    bottom:15%;
+}
+.roadmap-section {
+    background-image: url(../images/footer.png);
+    background-size: contain;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 15vh;
+    padding-bottom: 27vh;
+    position:relative;
+    overflow: hidden;
+}
+.tokenomics-split {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.tokenomics-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    background-color: #1a405d;
+    border-radius: 8px;
+}
+.distribution-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.tokenomics-text {
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    max-width: 700px;
+    padding: 10px;
+}
+.fire-gif {
+    width: 100%;
+}
+.fire-img {
+    width: 100%;
+}
+.campfire-left {
+    max-width: 35%;
+}
+.campfire-right {
+    max-width: 35%;
+}
+.campfire-center {
+    max-width: 25%;
+    position:relative;
+}
+.campfire-center::before {
+    content: "";
+    height: 70%;
+    width: 70%;
+    background: rgb(255 170 0 / 34%);
+    position: absolute;
+    display: block;
+    z-index: -1;
+    left: 50%;
+    border-radius: 1040px;
+    right: 0px;
+    bottom: 0px;
+    top: 50%;
+    mix-blend-mode: hard-light;
+    filter: blur(36px);
+    transform: translateX(-50%) translateY(-50%);
+    animation: fire 500ms ease-in-out infinite alternate; /* Adjust the duration and timing function as needed */
+}
+
+@keyframes fire {
+    0% {
+        transform: translateX(-50%) translateY(-50%) scale(0.97);
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) scale(1.0);
+    }
+}
+.campfire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 50px;
+    position:relative;
+
+}
+.campfire-right { 
+}
+.hero-section { 
+    background-image: url('../images/background.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    /* Ensures the image covers the entire section */
+    background-repeat: no-repeat;
+    background-position: bottom center; 
+    /* Prevents the image from repeating */
+    width: 100%;
+}
