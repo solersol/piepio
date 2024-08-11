@@ -468,11 +468,14 @@ body {
 .fire-img {
     width: 100%;
 }
+.fire-img1 {
+    width: 120%;
+}
 .campfire-left {
     max-width: 35%;
 }
 .campfire-right {
-    max-width: 35%;
+    max-width: 40%;
 }
 .campfire-center {
     max-width: 25%;
