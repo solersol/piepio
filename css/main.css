@@ -213,7 +213,7 @@ body {
 
 .split-half { 
     min-width:400px;
-    max-width:90%;
+    max-width:20%;
 }
 
 @keyframes colorChange {
